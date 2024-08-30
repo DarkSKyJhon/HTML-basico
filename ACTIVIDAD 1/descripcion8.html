@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .blog-posts {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 40px;
+            height: auto;
+        }
+        .post h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .post video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .comments-section {
+            margin-top: 20px;
+        }
+        .comments-section textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .comments-section button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .comments-section button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Amigo Jhon Games Blog</h1>
+    </header>
+    
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="">Contacto</a>
+    </nav>
+
+    <div class="blog-posts">
+        <div class="post">
+            <h2>TEKKEN 8</h2>
+            <h3>Descripcion</h3>
+            <p>Diseños de personajes completamente nuevos. Modelos sofisticados y muy 
+                detallados creados desde cero y gráficos de alta fidelidad que superan los 
+                límites del hardware de próxima generación y añaden realismo a las icónicas 
+                batallas de TEKKEN. Los entornos vivos y los escenarios destructibles se 
+                combinan para crear una extraordinaria sensación de inmersión y crear la 
+                mejor experiencia de juego.
+                El puño se encuentra con el destino en TEKKEN 8. La saga TEKKEN, que ostenta 
+                el récord de trama más larga en un videojuego, entra en un nuevo capítulo con
+                TEKKEN 8. Seis meses después de la conclusión del último enfrentamiento, 
+                continúa la trágica historia de Mishima. y Kazama, y ​​las sangrientas y 
+                amargas luchas entre padre e hijo. La historia de crecimiento personal y 
+                determinación de Jin Kazama marca un nuevo capítulo en la larga saga.
+                El nuevo sistema de combate, Heat, intensifica el carácter agresivo de los 
+                enfrentamientos sin perder de vista la jugabilidad y tácticas características 
+                de la saga TEKKEN. La intensidad de los enfrentamientos se potencia gracias a 
+                la destrucción de escenarios. El uso de súper movimientos como Rage Art sin 
+                duda cautivará tanto a los jugadores como a los espectadores. ¡Todos estos 
+                mecanismos se unen para hacer de TEKKEN 8 la entrega más emocionante de la 
+                saga hasta la fecha!
+                En el nuevo modo para un jugador, Arcade Mission, puedes crear tu propio 
+                avatar para embarcarte en una nueva vida en TEKKEN. Enfréntate a varios 
+                rivales de diferentes salas de juegos a medida que avanzas en la historia, 
+                mientras dominas los conceptos básicos y las habilidades prácticas de TEKKEN 8. Desbloquea una variedad de elementos de personalización para personajes y avatares a medida que avanzas.</p>
+            <video controls>
+                <source src="/media/trailer8.mp4" type="video/mp4">
+            </video>
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                <textarea placeholder="Escribe un comentario..."></textarea>
+                <br>
+                <button type="button">Enviar comentario</button>
+                <br><br>
+                <div class="reaction-buttons">
+                    <button id="like-button" class="reaction-button" 
+                        style="border-radius: 50%; background-color: #ddd; color: #333; padding: 15px 20px; cursor: pointer; min-width: 100px; text-align: center;">Me gusta el juego</button>
+                    <button id="dislike-button" class="reaction-button" 
+                        style="border-radius: 50%; background-color: #ddd; color: #333; padding: 15px 20px; cursor: pointer; min-width: 100px; text-align: center;">No me gusta el juego</button>
+                </div>
+            </div>
+            
+            <script>
+                const likeButton = document.getElementById('like-button');
+                const dislikeButton = document.getElementById('dislike-button');
+            
+                likeButton.addEventListener('click', function() {
+                    likeButton.style.backgroundColor = '#333';
+                    likeButton.style.color = '#fff';
+                    dislikeButton.style.backgroundColor = '#ddd';
+                    dislikeButton.style.color = '#333';
+                });
+            
+                dislikeButton.addEventListener('click', function() {
+                    dislikeButton.style.backgroundColor = '#333';
+                    dislikeButton.style.color = '#fff';
+                    likeButton.style.backgroundColor = '#ddd';
+                    likeButton.style.color = '#333';
+                });
+            </script>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Blog de Juegos. Todos los derechos reservados Jhon :3.</p>
+    </footer>
+
+</body>
+</html>

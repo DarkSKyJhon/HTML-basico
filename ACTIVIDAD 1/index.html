@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .blog-posts {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .post {
+            margin-bottom: 40px;
+            height: auto;
+        }
+        .post h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Amigo Jhon Games Blog</h1>
+        <audio id="background-music" src="/media/Zeldaindex.mp3" autoplay loop></audio>
+    </header>
+    
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/index.html">Contacto</a>
+    </nav>
+
+    <p>El Amigos Jhon Games Blog es un sitio web de reseñas de juegos para PC. 
+        Ofrece una amplia selección de títulos de juegos, incluidos juegos de acción, aventuras, simulación, deportes, 
+        estrategia y juegos de rol. Los usuarios pueden comentar, votar los juegos de forma gratuita. El sitio también cuenta con una 
+        comunidad en línea activa donde los usuarios pueden discutir y compartir sus experiencias de los juegos publicados.</p>
+
+    <div class="blog-posts">
+        <div class="post">
+            <img src="/media/1.jpg" alt="Imagen del Juego 1">
+            <h2><a href="descripcion1.html">Black Myth: Wukong</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/2.png" alt="Imagen del Juego 2">
+            <h2><a href="descripcion2.html">PC Building Simulator 2 PC</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/3.jpg" alt="Imagen del Juego 3">
+            <h2><a href="descripcion3.html">Mario Kart 8 PC (2014) MULTi8</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/4.png" alt="Imagen del Juego 4">
+            <h2><a href="descripcion4.html">Marvels SpiderMan / Marvel’s Spider-Man: Miles Morales PC</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/5.png" alt="Imagen del Juego 5">
+            <h2><a href="descripcion5.html">South Park Snow Day Deluxe Edition PC</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/6.jpg" alt="Imagen del Juego 6">
+            <h2><a href="descripcion6.html">Terraria PC</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/7.jpg" alt="Imagen del Juego 7">
+            <h2><a href="descripcion7.html">DeepWeb Simulator (2024) PC</a></h2>
+        </div>
+        <div class="post">
+            <img src="/media/8.png" alt="Imagen del Juego 8">
+            <h2><a href="descripcion8.html">TEKKEN 8 Ultimate Edition</a></h2>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Blog de Juegos. Todos los derechos reservados Jhon :3.</p>
+    </footer>
+
+</body>
+</html>
